@@ -1,0 +1,20 @@
+在本目录下打开CMD命令行下输入命令：
+.\parse.exe <filename>
+即可编译（语法分析、语义分析、中间代码生成）
+<filename>文件
+TEST3、TEST4文件为样板源程序
+SampleTest为默认编译的源程序
+Illegal_1为Progam输入为Progamd
+Illegal_2为变量声明的var输入为va
+Illegal_3为复合句缺少begin
+Illegal_4为语句表中插入未声明变量的赋值语句E:=4;
+Illegal_5为if语句的判断条件中布尔表达式替换为算术表达式
+Illegal_6为算术表达式中插入为声明变量
+Illegal_7为算术表达式中变量为未赋值变量
+Illegal_8为算术表达式中变量为bool类型
+Illegal_9为语句缺少;
+Illegal_10为repeat缺少until
+Illegal_11为复合语句缺少end
+Illegal_12为if语句缺少then
+Illegal_13为while语句缺少do
+Illegal_14为while语句缺少while
