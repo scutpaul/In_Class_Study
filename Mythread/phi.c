@@ -25,7 +25,7 @@ void get_chopsticks (int id) {
 	}
 }
 
-void put_chopsticks (int id) {	
+void put_chopsticks (int id) {
 	if (id%2 == 0) {
 	mythread_mutex_unlock(&chopstick[(id+1)%5]);
 	printf("Philosopher #%d put right chopstick.\n", id);
@@ -61,7 +61,7 @@ void main () {
 	mythread_init(100000);
 	for (i=0; i<5; i++) {
 		mythread_mutex_init(&chopstick[i]);
-		mythread_create(&philosopher[i], (void *)dining, (int *)(i+1));
+		mythread_create(&philosopher[i], (void *)dining, (int *)(i));
 	}
 	mythread_exit(NULL);
 }
